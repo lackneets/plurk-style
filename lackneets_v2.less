@@ -167,7 +167,7 @@
 
 #plurk_form{
 	position:absolute;
-	top:510px;
+	top:517px; padding:0px;
 	left:0; right:0px;
 	z-index:1000;
 	max-height:80px;
@@ -183,10 +183,17 @@
 		background:rgba( 0,0,0,0.5 );
 		border:none !important;
 	}
-	.icons_holder_row *{
-		max-height:0px;
-		overflow:hidden;
+	.icons_holder_row{
+		position:absolute; top:-9999px;
+		opacity:0;
+		-webkit-transition: opacity 0.3s;
 	}
+	.icons_holder{
+		background: rgba(0,0,0,0.5);
+		padding: 1px 10px !important;
+		margin-right: 17px;
+	}
+
 	.display_name{
 		position:fixed !important;
 		top:-999px !important;
