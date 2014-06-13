@@ -1,0 +1,408 @@
+#dashboard_holder{
+	z-index: 0;
+	position:absolute;
+	top:0;left:0;right:0;
+	max-width:9999px;
+	padding:0px; margin:0px;
+	#plurk-dashboard.own{
+		position:relative;
+		margin-top:163px;
+		z-index:900;
+		overflow:visible;
+	}
+
+	#plurk-dashboard{
+		//position:absolute;
+		//top:-9999px;
+		background:none;
+		border:none;
+		
+		.dash-segment-profile{
+			_outline: 2px solid red;
+			position:absolute; z-index:100;
+			background: rgba( 0,0,0,0.5 );
+			top:450px; left:0px;
+			right:0px;
+			width:auto;
+			
+			#dash-profile{
+				position:absolute;
+				z-index:2;
+				left:40px;
+				span, div{ //Hideen
+					position:absolute;
+					top:-9999px;
+				}
+			}
+			#dash-additional-info{
+				background: rgba( 0,0,0,0.8 );
+				position:relative;
+				margin:10px;
+				padding:10px 20px;
+				left:210px;
+				left:0px; padding-left:240px;
+				min-height: 260px;
+				#about_me{
+					width:260px;
+				}
+			}
+		}
+		.dash-segment-stats{
+			position: absolute;
+			font-size:0px;
+	  		a, h2, table{ //Hideen
+	  			position:absolute;
+	  			top:-9999px;
+	  		}	
+	  		.karma_hover{
+	  			position: absolute;
+	  			top:650px; left:30px;
+	  			width:200px;
+	  			z-index:400;
+	  			font-family: Tahoma, Geneva, sans-serif;
+	  			_font-style:italic;
+	  			cursor:default;
+	  		}
+	  		.award_bar{
+	  			position:absolute;
+	  			z-index:100;
+	  			width: 500px;
+	  			top:470px; left:550px;
+	  		}
+	  	}
+	  	.show_mutual_friends, 
+	  	#friend_managment, 
+	  	#dashboard-invite-div,
+	  	#dashboard-usersearch,
+	  	#sharePlurk, .dash-icon,
+	  	#fan_managment, h2{ //HIDDEN
+	  		position:absolute;
+	  		top:-9999px;
+	  	}
+	  	.dash-segment-friends{
+	  		position: absolute;
+	  		.show_all_friends{
+	  			position:absolute;
+	  			z-index:999;
+	  			width:186px;
+	  			text-align:center;
+	  			background: rgba( 200,200,200,0.8 );
+	  			padding:5px;
+	  			top:525px; left:560px;
+	  			a{
+	  				color:#000;
+	  				text-decoration:none;
+	  			}
+	  		}
+	  		#friend_holder{
+	  			position:absolute;
+	  			z-index:100;
+	  			top:560px; left:560px;
+	  			a, img{
+	  				width:39px; height:39px;
+	  			}
+	  			td{
+	  				padding-right:9px;
+	  				padding-bottom:3px;
+	  			}
+	  		}
+	  	}
+	  	.dash-segment-fans{
+	  		position: absolute;
+	  		.show_all_friends{
+	  			position:absolute;
+	  			z-index:999;
+	  			width:186px;
+	  			text-align:center;
+	  			background: rgba( 200,200,200,0.8 );
+	  			padding:5px;
+	  			top:525px; left:756px;
+	  			a{
+	  				color:#000;
+	  				text-decoration:none;
+	  			}
+	  		}
+	  		#fan_holder{
+	  			position:absolute;
+	  			z-index:100;
+	  			top:560px; left:756px;
+	  			a, img{
+	  				width:39px; height:39px;
+	  			}
+	  			td{
+	  				padding-right:9px;
+	  				padding-bottom:3px;
+	  			}
+	  		}
+	  	}
+	  }
+	}
+
+#dynamic_logo{ opacity:0; } //吉祥物掰
+
+#plurk_form{
+	position:absolute;
+	top:510px;
+	left:0; right:0px;
+	z-index:1000;
+	max-height:80px;
+	form{
+		height: 86px;
+	}
+	.input_holder .candidate{
+		background: rgba(255,255,255, 0.9);
+		padding: 10px !important;
+		border-radius:6px;
+	}
+	.plurkaction{
+		background:rgba( 0,0,0,0.5 );
+		border:none !important;
+	}
+	.icons_holder_row *{
+		max-height:0px;
+		overflow:hidden;
+	}
+	.display_name{
+		position:fixed !important;
+		top:-999px !important;
+	}
+	.dd_img{
+		.m_qualifier{
+			position:relative; top:2px;
+			padding:2px 3px;
+			border-radius:5px;
+		}
+		img{
+			margin-left:5px;
+		}
+	}
+}
+
+#filter_tab{
+	z-index: 0;
+	background:rgba( 0,0,0,0.5 );
+	position:absolute;
+	left:0px; right:-20px;
+	padding:10px;
+	*top:552px;
+	top:480px;
+	border:none;
+
+	a{
+		min-height:28px;
+		min-width:28px;
+		max-height: 28px; 
+		padding:5px 8px !important;
+		border:none !important;
+		border-radius:5px;
+	}
+
+	#count_private_plurks,
+	#count_my_plurks,
+	#count_responded_plurks,
+	#count_favorite_plurks,
+	#count_all_plurk
+	{
+		font-size:0px; 
+	}
+
+	#count_private_plurks span,
+	#count_my_plurks span,
+	#count_responded_plurks span,
+	#count_favorite_plurks span,
+	#count_all_plurk span{
+		font-size:12px;
+		position:absolute;
+		top:0px;
+		padding:0px 5px;
+	}
+}
+
+// 左右瀏覽按鈕
+.browse_button[style*="right"]{
+	top:35px;
+	left:40px !important;
+	right:auto !important;
+	.cmp_back_to_today{
+		background: url('http://www.iconsdb.com/icons/download/white/arrow-96-24.png');
+		height: 24px;
+		width: 24px;
+		opacity:0.8;
+		position:absolute; top:0; left:-30px;
+
+	}
+}
+.browse_button[style*="left"]{
+	position:absolute; top:-999px !important;
+}
+.cmp_arrow_right{
+	background: url('http://www.iconsdb.com/icons/download/white/arrow-24-24.png');
+	height: 24px;
+	width: 24px;
+	opacity: 0.8;
+}
+
+#layout_body{ 
+	*height: 650px;
+	
+}
+
+//#layout_content{
+	._lc_{
+
+		background:url(http://dl.dropbox.com/u/7165134/www/plurk/themes/nichijou_night/hakase_2012_e.png) no-repeat,url(http://dl.dropbox.com/u/7165134/www/plurk/themes/nichijou_night/bg_halo2.jpg) !important;
+		background-size: auto 100%, cover !important;
+		background-position: right 40px, 50% !important;
+		height: 600px;
+		min-height: initial !important;
+	}
+
+
+	body #timeline_holder{
+
+		background: none;
+		border:none;
+
+		height: 480px !important;
+		/* overflow: hidden; */
+		min-height: initial;
+
+		z-index: 1;
+		position: relative;
+		overflow: visible!important;
+
+		#timeline_cnt {
+
+			overflow: visible !important;
+			margin-top: 80px;
+
+		//對齊
+		.cboxAnchor {
+			position: absolute;
+			left:0px !important;
+		}
+
+		.block_cnt {
+			
+			&.hh_mm{
+				border-right:1px dashed rgba(200,200,200,0.2 ) !important;	
+			}
+			&.day_start{
+				background: rgba(255,255,255,0.2);
+			}		
+		}
+	}
+	#timeline_bg{
+		.day_start {
+			opacity:0 !important;
+		}
+		.div_inner {
+			position: relative;
+		}
+		.div_bottom {
+			position: absolute;
+			top:0px!important;
+			left:0px;
+			right:0px;
+			* {
+				color: white !important;
+				z-index: 889;
+			}
+		}
+	}
+	#bottom_line {
+		top: 0px !important;
+		opacity: 0.2;
+	}
+}
+
+body {
+	#updater {
+		top: 560px !important;
+		border: 1px solid #444;
+		background: #555;
+		background: rgba(0, 0, 0, 0.5);
+		-moz-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8);
+		-webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8);
+		box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8);
+		* {
+			color: white !important;
+		}
+
+		top: 35px !important;
+		left: 80px !important;
+	}
+}
+
+
+.plurk {
+	.response_count {
+		color: white !important;
+		background-color: #888;
+		margin-top: 5px;
+		padding: 5px;
+		-webkit-box-shadow: 0 0 0px 0px #4a7de4;
+		-webkit-transition: -webkit-box-shadow 0.5s, background-color 0.5s;
+	}
+	.plurk_cnt {
+		-webkit-box-shadow: 0 0 0px 0px #fff;
+		-webkit-transition: -webkit-box-shadow 0.5s ease-out;
+	}
+
+	&.new{
+		.response_count {
+			background-color: #4a7de4 !important;
+			-moz-box-shadow: 0 0 5px 3px #4a7de4;
+			-moz-box-shadow: 0 0 5px 3px #4a7de4;
+			box-shadow: 0 0 5px 3px #4a7de4;
+		}
+		.plurk_cnt {
+			border: 1px dashed #54c2fb !important;
+			-webkit-box-shadow: 0 0 8px 5px #fff;
+			-moz-box-shadow: 0 0 8px 5px #fff;
+			box-shadow: 0 0 8px 5px #fff;
+		}		
+	}
+}
+
+
+
+footer{
+	//HIDDEN
+	position:absolute;
+	top:-9999px;
+
+	// margin-top: 220px;
+	// background: rgba(0,0,0,0.5);
+	// text-align: right;
+	// *{
+	// 	text-align: right !important;
+	// }
+	// ul#footer{
+	// 	width: 400px;
+	// 	max-width: initial;
+	// }
+}
+
+
+
+
+
+
+
+
+
+
+/*
+#profile_pic {
+	margin: 10px 5px !important;
+	-moz-border-radius: 8px;
+	border-radius: 8px;
+	-webkit-box-shadow: 0 0 8px 3px #fff;
+	-moz-box-shadow: 0 0 8px 3px #fff;
+	box-shadow: 0 0 8px 3px #fff;
+}
+#profile_pic:hover {
+	position: relative !important;
+	z-index: 999;
+	}*/
