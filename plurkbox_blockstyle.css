@@ -1,0 +1,55 @@
+/*******************************
+
+	噗文回應盒子換行排版風格
+
+	*******************************/
+
+body #form_holder .plurk.cboxAnchor {
+  border-bottom: 1px dashed #aaaaaa;
+  padding: 8px 0px;
+}
+body #form_holder .plurk.cboxAnchor.highlight_owner {
+  background-color: #faecdf;
+}
+body #form_holder .plurk.cboxAnchor .plurk_cnt {
+  background: none !important;
+}
+body .block_cnt .plurk.cboxAnchor .td_img {
+  position: absolute;
+  left: 0px;
+}
+body .block_cnt .plurk.cboxAnchor .plurk_cnt {
+  overflow: hidden;
+}
+body .block_cnt .plurk.cboxAnchor .plurk_cnt table {
+  margin-bottom: 20px;
+  position: relative;
+  top: 20px;
+}
+body .block_cnt .plurk.cboxAnchor .plurk_cnt table .td_qual {
+  position: absolute;
+  top: -20px;
+  left: 20px;
+  background: #efefef;
+  width: 100%;
+}
+body .block_cnt .plurk.cboxAnchor .plurk_cnt table .td_cnt {
+  padding: 5px 12px;
+}
+body .block_cnt .td_response_count {
+  z-index: 999;
+  position: relative;
+}
+body #form_holder .plurk .plurk_cnt .td_qual {
+  position: absolute;
+  top: 0px;
+}
+body #form_holder .plurk .plurk_cnt .td_cnt {
+  padding: 15px 10px 0px 10px;
+}
+body #form_holder .qualifier {
+  opacity: 0.5;
+}
+body #form_holder .text_holder {
+  color: #222222;
+}

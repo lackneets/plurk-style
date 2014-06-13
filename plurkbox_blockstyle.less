@@ -1,0 +1,73 @@
+/*******************************
+
+	噗文回應盒子換行排版風格
+
+	*******************************/
+
+	body #form_holder{
+	//噗浪回應區塊每行增高
+	.plurk.cboxAnchor{
+		border-bottom: 1px dashed #AAA;
+		padding: 8px 0px;	
+		&.highlight_owner{
+			background-color: #faecdf;
+		}
+		.plurk_cnt {
+			background: none !important;
+		}
+	}
+}
+
+body{
+	// 噗浪盒換行
+	.block_cnt{
+
+		.plurk.cboxAnchor{
+			.td_img{
+				position:absolute; left:0px;
+			}
+			.plurk_cnt {
+				
+				overflow:hidden;
+				table{
+					margin-bottom:20px;
+					position:relative; 
+					top:20px;
+					
+					.td_qual{
+						position:absolute;
+						top:-20px;
+						left:20px;
+						background:#efefef;
+						width:100%;
+					}
+					.td_cnt{
+						padding:5px 12px;
+					}	
+				}
+			}
+		}
+		.td_response_count{
+			z-index:999;
+			position:relative;
+		}		
+	}
+	// 留言區換行 
+	#form_holder {
+		.plurk .plurk_cnt {
+			.td_qual {
+				position: absolute;
+				top: 0px;
+			}
+			.td_cnt {
+				padding: 15px 10px 0px 10px;
+			}
+		}
+		.qualifier {
+			opacity: 0.5;
+		} 
+		.text_holder {
+			color: #222;
+		}
+	}	
+}
