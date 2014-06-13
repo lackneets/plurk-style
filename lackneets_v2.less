@@ -145,6 +145,18 @@
 				}
 			}
 		}
+		
+		//滑入才顯示
+		.dash-segment-friends,
+		.dash-segment-fans{
+			-webkit-transition: opacity 0.3s;
+			opacity:0.2 !important;
+			z-index:999;
+			&:hover{
+				opacity:1 !important;
+			}
+		}
+		
 	}
 }
 
