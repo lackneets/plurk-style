@@ -17,6 +17,7 @@ body #form_holder .plurk.cboxAnchor .plurk_cnt {
 body .block_cnt .plurk.cboxAnchor .td_img {
   position: absolute;
   left: 0px;
+  z-index: 99;
 }
 body .block_cnt .plurk.cboxAnchor .plurk_cnt {
   overflow: hidden;
