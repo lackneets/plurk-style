@@ -8,6 +8,10 @@
   padding: 0px;
   margin: 0px;
 }
+#dashboard_holder .adsense {
+  position: absolute !important;
+  top: -9999px !important;
+}
 #dashboard_holder #plurk-dashboard.own {
   position: relative;
   margin-top: 163px;
