@@ -153,12 +153,23 @@
   padding-right: 9px;
   padding-bottom: 3px;
 }
+#dashboard_holder #plurk-dashboard .dash-segment-friends,
+#dashboard_holder #plurk-dashboard .dash-segment-fans {
+  -webkit-transition: opacity 0.3s;
+  opacity: 0.2 !important;
+  z-index: 999;
+}
+#dashboard_holder #plurk-dashboard .dash-segment-friends:hover,
+#dashboard_holder #plurk-dashboard .dash-segment-fans:hover {
+  opacity: 1 !important;
+}
 #dynamic_logo {
   opacity: 0;
 }
 #plurk_form {
   position: absolute;
-  top: 510px;
+  top: 517px;
+  padding: 0px;
   left: 0;
   right: 0px;
   z-index: 1000;
@@ -176,9 +187,16 @@
   background: rgba(0, 0, 0, 0.5);
   border: none !important;
 }
-#plurk_form .icons_holder_row * {
-  max-height: 0px;
-  overflow: hidden;
+#plurk_form .icons_holder_row {
+  position: absolute;
+  top: -9999px;
+  opacity: 0;
+  -webkit-transition: opacity 0.3s;
+}
+#plurk_form .icons_holder {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 1px 10px !important;
+  margin-right: 17px;
 }
 #plurk_form .display_name {
   position: fixed !important;
@@ -192,6 +210,10 @@
 }
 #plurk_form .dd_img img {
   margin-left: 5px;
+}
+#plurk_form:hover .icons_holder_row {
+  position: static;
+  opacity: 1;
 }
 #filter_tab {
   z-index: 0;
@@ -229,12 +251,12 @@
   top: 0px;
   padding: 0px 5px;
 }
-.browse_button[style*="right"] {
+body .browse_button[style*="right"] {
   top: 35px;
   left: 40px !important;
   right: auto !important;
 }
-.browse_button[style*="right"] .cmp_back_to_today {
+body .browse_button[style*="right"] .cmp_back_to_today {
   background: url('http://www.iconsdb.com/icons/download/white/arrow-96-24.png');
   height: 24px;
   width: 24px;
@@ -243,18 +265,15 @@
   top: 0;
   left: -30px;
 }
-.browse_button[style*="left"] {
+body .browse_button[style*="left"] {
   position: absolute;
   top: -999px !important;
 }
-.cmp_arrow_right {
+body .cmp_arrow_right {
   background: url('http://www.iconsdb.com/icons/download/white/arrow-24-24.png');
   height: 24px;
   width: 24px;
   opacity: 0.8;
-}
-#layout_body {
-  *height: 650px;
 }
 ._lc_ {
   background: url(http://dl.dropbox.com/u/7165134/www/plurk/themes/nichijou_night/hakase_2012_e.png) no-repeat, url(http://dl.dropbox.com/u/7165134/www/plurk/themes/nichijou_night/bg_halo2.jpg) !important;
