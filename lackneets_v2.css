@@ -116,6 +116,7 @@
   background: url(http://dl.dropbox.com/u/7165134/www/plurk/themes/nichijou_night/hakase_2012_e.png) no-repeat, url(http://dl.dropbox.com/u/7165134/www/plurk/themes/nichijou_night/bg_halo2.jpg) !important;
   background-size: auto 100%, cover !important;
   background-position: right 40px, 50% !important;
+  height: 610px;
 }
 ._lc_ #dashboard_holder #plurk-dashboard.own {
   position: relative;
