@@ -1,5 +1,130 @@
-﻿#dashboard_holder{
+﻿/* #1 河道 */
+._lc_ #timeline_holder{
+
+	background: none;
+	border:none;
+
+	// background:url(http://dl.dropbox.com/u/7165134/www/plurk/themes/nichijou_night/hakase_2012_e.png) no-repeat,url(http://dl.dropbox.com/u/7165134/www/plurk/themes/nichijou_night/bg_halo2.jpg) !important;
+	// background-size: auto 100%, cover !important;
+	// background-position: right 40px, 50% !important;
+
+	height: 610px !important;
+	min-height: initial;
+
 	z-index: 3;
+	position: relative;
+	overflow: visible!important;
+	
+	#timeline_cnt {
+
+		overflow: visible !important;
+		margin-top: 80px;
+		max-height: 370px; //感應區不要蓋到filter
+
+		//對齊
+		.cboxAnchor {
+			position: absolute;
+			left:0px !important;
+		}
+
+		.block_cnt {
+
+			max-height: 300px;
+
+			div{ max-height: 300px; }
+			
+			&.hh_mm{
+				border-right:1px dashed rgba(200,200,200,0.2 ) !important;	
+			}
+			&.day_start{
+				background: rgba(255,255,255,0.2);
+			}		
+		}
+	}
+	#timeline_bg{
+		.day_start {
+			opacity:0 !important;
+		}
+		.div_inner {
+			position: relative;
+		}
+		.div_bottom {
+			position: absolute;
+			top:0px!important;
+			left:0px;
+			right:0px;
+			* {
+				color: white !important;
+				z-index: 889;
+			}
+		}
+	}
+	#bottom_line {
+		top: 0px !important;
+		opacity: 0.2;
+	}
+}
+
+._lc_ #updater{
+	top: 560px !important;
+	border: 1px solid #444;
+	background: #555;
+	background: rgba(0, 0, 0, 0.5);
+	-moz-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8);
+	-webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8);
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8);
+	* {
+		color: white !important;
+	}
+
+	top: 85px !important;
+	left: 80px !important;
+}
+
+/* #2 Filter 頁籤列 */
+._lc_ #filter_tab{
+	z-index: 2;
+	background:rgba( 0,0,0,0.5 );
+	position:absolute;
+	left:0px; right:-20px;
+	padding:10px;
+	*top:552px;
+	top:480px;
+	border:none;
+
+	a{
+		min-height:28px;
+		min-width:28px;
+		max-height: 28px; 
+		padding:5px 8px !important;
+		border:none !important;
+		border-radius:5px;
+	}
+
+	#count_private_plurks,
+	#count_my_plurks,
+	#count_responded_plurks,
+	#count_favorite_plurks,
+	#count_all_plurk
+	{
+		font-size:0px; 
+	}
+
+	#count_private_plurks span,
+	#count_my_plurks span,
+	#count_responded_plurks span,
+	#count_favorite_plurks span,
+	#count_all_plurk span{
+		font-size:12px;
+		position:absolute;
+		top:0px;
+		padding:0px 5px;
+	}
+}
+
+/* #3 Fashborad */
+._lc_ #dashboard_holder{
+	z-index: 1;
 	position:absolute;
 	top:0;left:0;right:0;
 	max-width:9999px;
@@ -159,6 +284,32 @@
 	}
 }
 
+// 左右瀏覽按鈕
+._lc_ {
+	.browse_button[style*="right"]{
+		top:85px;
+		left:40px !important;
+		right:auto !important;
+		.cmp_back_to_today{
+			background: url('http://www.iconsdb.com/icons/download/white/arrow-96-24.png');
+			height: 24px;
+			width: 24px;
+			opacity:0.8;
+			position:absolute; top:0; left:-30px;
+
+		}
+	}
+	.browse_button[style*="left"]{
+		position:absolute; top:-999px !important;
+	}
+	.cmp_arrow_right{
+		background: url('http://www.iconsdb.com/icons/download/white/arrow-24-24.png');
+		height: 24px;
+		width: 24px;
+		opacity: 0.8;
+	}
+}
+
 //河道吉祥物
 #dynamic_logo{ 
 	opacity:0; 
@@ -215,167 +366,6 @@
 	}
 }
 
-
-
-//頁籤列
-._lc_ #filter_tab{
-	z-index: 2;
-	background:rgba( 0,0,0,0.5 );
-	position:absolute;
-	left:0px; right:-20px;
-	padding:10px;
-	*top:552px;
-	top:480px;
-	border:none;
-
-	a{
-		min-height:28px;
-		min-width:28px;
-		max-height: 28px; 
-		padding:5px 8px !important;
-		border:none !important;
-		border-radius:5px;
-	}
-
-	#count_private_plurks,
-	#count_my_plurks,
-	#count_responded_plurks,
-	#count_favorite_plurks,
-	#count_all_plurk
-	{
-		font-size:0px; 
-	}
-
-	#count_private_plurks span,
-	#count_my_plurks span,
-	#count_responded_plurks span,
-	#count_favorite_plurks span,
-	#count_all_plurk span{
-		font-size:12px;
-		position:absolute;
-		top:0px;
-		padding:0px 5px;
-	}
-}
-
-// 左右瀏覽按鈕
-body{
-	.browse_button[style*="right"]{
-		top:85px;
-		left:40px !important;
-		right:auto !important;
-		.cmp_back_to_today{
-			background: url('http://www.iconsdb.com/icons/download/white/arrow-96-24.png');
-			height: 24px;
-			width: 24px;
-			opacity:0.8;
-			position:absolute; top:0; left:-30px;
-
-		}
-	}
-	.browse_button[style*="left"]{
-		position:absolute; top:-999px !important;
-	}
-	.cmp_arrow_right{
-		background: url('http://www.iconsdb.com/icons/download/white/arrow-24-24.png');
-		height: 24px;
-		width: 24px;
-		opacity: 0.8;
-	}
-}
-
-
-// #layout_content 噗浪限制從這裡開始套
-._lc_{
-
-
-}
-
-//河道
-body #timeline_holder{
-
-	background: none;
-	border:none;
-
-	background:url(http://dl.dropbox.com/u/7165134/www/plurk/themes/nichijou_night/hakase_2012_e.png) no-repeat,url(http://dl.dropbox.com/u/7165134/www/plurk/themes/nichijou_night/bg_halo2.jpg) !important;
-	background-size: auto 100%, cover !important;
-	background-position: right 40px, 50% !important;
-
-	height: 610px !important;
-	min-height: initial;
-
-	z-index: 0;
-	position: relative;
-	overflow: visible!important;
-	
-	#timeline_cnt {
-
-		overflow: visible !important;
-		margin-top: 80px;
-
-		//對齊
-		.cboxAnchor {
-			position: absolute;
-			left:0px !important;
-		}
-
-		.block_cnt {
-
-			max-height: 300px;
-
-			div{ max-height: 300px; }
-			
-			&.hh_mm{
-				border-right:1px dashed rgba(200,200,200,0.2 ) !important;	
-			}
-			&.day_start{
-				background: rgba(255,255,255,0.2);
-			}		
-		}
-	}
-	#timeline_bg{
-		.day_start {
-			opacity:0 !important;
-		}
-		.div_inner {
-			position: relative;
-		}
-		.div_bottom {
-			position: absolute;
-			top:0px!important;
-			left:0px;
-			right:0px;
-			* {
-				color: white !important;
-				z-index: 889;
-			}
-		}
-	}
-	#bottom_line {
-		top: 0px !important;
-		opacity: 0.2;
-	}
-}
-
-body {
-	#updater {
-		top: 560px !important;
-		border: 1px solid #444;
-		background: #555;
-		background: rgba(0, 0, 0, 0.5);
-		-moz-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8);
-		-webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8);
-		box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8);
-		* {
-			color: white !important;
-		}
-
-		top: 85px !important;
-		left: 80px !important;
-	}
-}
-
-
 .plurk {
 	.response_count {
 		color: white !important;
@@ -405,8 +395,6 @@ body {
 		}		
 	}
 }
-
-
 
 footer{
 	//HIDDEN
