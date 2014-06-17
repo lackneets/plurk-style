@@ -1,5 +1,111 @@
-#dashboard_holder {
+/* #1 河道 */
+
+._lc_ #timeline_holder {
+  background: none;
+  border: none;
+  height: 610px !important;
+  min-height: initial;
   z-index: 3;
+  position: relative;
+  overflow: visible!important;
+}
+._lc_ #timeline_holder #timeline_cnt {
+  overflow: visible !important;
+  margin-top: 80px;
+  max-height: 370px;
+}
+._lc_ #timeline_holder #timeline_cnt .cboxAnchor {
+  position: absolute;
+  left: 0px !important;
+}
+._lc_ #timeline_holder #timeline_cnt .block_cnt {
+  max-height: 300px;
+}
+._lc_ #timeline_holder #timeline_cnt .block_cnt div {
+  max-height: 300px;
+}
+._lc_ #timeline_holder #timeline_cnt .block_cnt.hh_mm {
+  border-right: 1px dashed rgba(200, 200, 200, 0.2) !important;
+}
+._lc_ #timeline_holder #timeline_cnt .block_cnt.day_start {
+  background: rgba(255, 255, 255, 0.2);
+}
+._lc_ #timeline_holder #timeline_bg .day_start {
+  opacity: 0 !important;
+}
+._lc_ #timeline_holder #timeline_bg .div_inner {
+  position: relative;
+}
+._lc_ #timeline_holder #timeline_bg .div_bottom {
+  position: absolute;
+  top: 0px!important;
+  left: 0px;
+  right: 0px;
+}
+._lc_ #timeline_holder #timeline_bg .div_bottom * {
+  color: white !important;
+  z-index: 889;
+}
+._lc_ #timeline_holder #bottom_line {
+  top: 0px !important;
+  opacity: 0.2;
+}
+._lc_ #updater {
+  top: 560px !important;
+  border: 1px solid #444444;
+  background: #555555;
+  background: rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8);
+  -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8);
+  top: 85px !important;
+  left: 80px !important;
+}
+._lc_ #updater * {
+  color: white !important;
+}
+/* #2 Filter 頁籤列 */
+
+._lc_ #filter_tab {
+  z-index: 2;
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  left: 0px;
+  right: -20px;
+  padding: 10px;
+  *top: 552px;
+  top: 480px;
+  border: none;
+}
+._lc_ #filter_tab a {
+  min-height: 28px;
+  min-width: 28px;
+  max-height: 28px;
+  padding: 5px 8px !important;
+  border: none !important;
+  border-radius: 5px;
+}
+._lc_ #filter_tab #count_private_plurks,
+._lc_ #filter_tab #count_my_plurks,
+._lc_ #filter_tab #count_responded_plurks,
+._lc_ #filter_tab #count_favorite_plurks,
+._lc_ #filter_tab #count_all_plurk {
+  font-size: 0px;
+}
+._lc_ #filter_tab #count_private_plurks span,
+._lc_ #filter_tab #count_my_plurks span,
+._lc_ #filter_tab #count_responded_plurks span,
+._lc_ #filter_tab #count_favorite_plurks span,
+._lc_ #filter_tab #count_all_plurk span {
+  font-size: 12px;
+  position: absolute;
+  top: 0px;
+  padding: 0px 5px;
+}
+/* #3 Fashborad */
+
+._lc_ #dashboard_holder {
+  z-index: 1;
   position: absolute;
   top: 0;
   left: 0;
@@ -7,18 +113,21 @@
   max-width: 9999px;
   padding: 0px;
   margin: 0px;
+  background: url(http://dl.dropbox.com/u/7165134/www/plurk/themes/nichijou_night/hakase_2012_e.png) no-repeat, url(http://dl.dropbox.com/u/7165134/www/plurk/themes/nichijou_night/bg_halo2.jpg) !important;
+  background-size: auto 100%, cover !important;
+  background-position: right 40px, 50% !important;
 }
-#dashboard_holder #plurk-dashboard.own {
+._lc_ #dashboard_holder #plurk-dashboard.own {
   position: relative;
   margin-top: 163px;
   z-index: 900;
   overflow: visible;
 }
-#dashboard_holder #plurk-dashboard {
+._lc_ #dashboard_holder #plurk-dashboard {
   background: none;
   border: none;
 }
-#dashboard_holder #plurk-dashboard .dash-segment-profile {
+._lc_ #dashboard_holder #plurk-dashboard .dash-segment-profile {
   _outline: 2px solid red;
   position: absolute;
   z-index: 100;
@@ -28,17 +137,17 @@
   right: 0px;
   width: auto;
 }
-#dashboard_holder #plurk-dashboard .dash-segment-profile #dash-profile {
+._lc_ #dashboard_holder #plurk-dashboard .dash-segment-profile #dash-profile {
   position: absolute;
   z-index: 2;
   left: 40px;
 }
-#dashboard_holder #plurk-dashboard .dash-segment-profile #dash-profile span,
-#dashboard_holder #plurk-dashboard .dash-segment-profile #dash-profile div {
+._lc_ #dashboard_holder #plurk-dashboard .dash-segment-profile #dash-profile span,
+._lc_ #dashboard_holder #plurk-dashboard .dash-segment-profile #dash-profile div {
   position: absolute;
   top: -9999px;
 }
-#dashboard_holder #plurk-dashboard .dash-segment-profile #dash-additional-info {
+._lc_ #dashboard_holder #plurk-dashboard .dash-segment-profile #dash-additional-info {
   background: rgba(0, 0, 0, 0.8);
   position: relative;
   margin: 10px;
@@ -48,20 +157,20 @@
   padding-left: 240px;
   min-height: 260px;
 }
-#dashboard_holder #plurk-dashboard .dash-segment-profile #dash-additional-info #about_me {
+._lc_ #dashboard_holder #plurk-dashboard .dash-segment-profile #dash-additional-info #about_me {
   width: 260px;
 }
-#dashboard_holder #plurk-dashboard .dash-segment-stats {
+._lc_ #dashboard_holder #plurk-dashboard .dash-segment-stats {
   position: absolute;
   font-size: 0px;
 }
-#dashboard_holder #plurk-dashboard .dash-segment-stats a,
-#dashboard_holder #plurk-dashboard .dash-segment-stats h2,
-#dashboard_holder #plurk-dashboard .dash-segment-stats table {
+._lc_ #dashboard_holder #plurk-dashboard .dash-segment-stats a,
+._lc_ #dashboard_holder #plurk-dashboard .dash-segment-stats h2,
+._lc_ #dashboard_holder #plurk-dashboard .dash-segment-stats table {
   position: absolute;
   top: -9999px;
 }
-#dashboard_holder #plurk-dashboard .dash-segment-stats .karma_hover {
+._lc_ #dashboard_holder #plurk-dashboard .dash-segment-stats .karma_hover {
   position: absolute;
   top: 650px;
   left: 30px;
@@ -71,28 +180,28 @@
   _font-style: italic;
   cursor: default;
 }
-#dashboard_holder #plurk-dashboard .dash-segment-stats .award_bar {
+._lc_ #dashboard_holder #plurk-dashboard .dash-segment-stats .award_bar {
   position: absolute;
   z-index: 100;
   width: 500px;
   top: 470px;
   left: 550px;
 }
-#dashboard_holder #plurk-dashboard .show_mutual_friends,
-#dashboard_holder #plurk-dashboard #friend_managment,
-#dashboard_holder #plurk-dashboard #dashboard-invite-div,
-#dashboard_holder #plurk-dashboard #dashboard-usersearch,
-#dashboard_holder #plurk-dashboard #sharePlurk,
-#dashboard_holder #plurk-dashboard .dash-icon,
-#dashboard_holder #plurk-dashboard #fan_managment,
-#dashboard_holder #plurk-dashboard h2 {
+._lc_ #dashboard_holder #plurk-dashboard .show_mutual_friends,
+._lc_ #dashboard_holder #plurk-dashboard #friend_managment,
+._lc_ #dashboard_holder #plurk-dashboard #dashboard-invite-div,
+._lc_ #dashboard_holder #plurk-dashboard #dashboard-usersearch,
+._lc_ #dashboard_holder #plurk-dashboard #sharePlurk,
+._lc_ #dashboard_holder #plurk-dashboard .dash-icon,
+._lc_ #dashboard_holder #plurk-dashboard #fan_managment,
+._lc_ #dashboard_holder #plurk-dashboard h2 {
   position: absolute;
   top: -9999px;
 }
-#dashboard_holder #plurk-dashboard .dash-segment-friends {
+._lc_ #dashboard_holder #plurk-dashboard .dash-segment-friends {
   position: absolute;
 }
-#dashboard_holder #plurk-dashboard .dash-segment-friends .show_all_friends {
+._lc_ #dashboard_holder #plurk-dashboard .dash-segment-friends .show_all_friends {
   position: absolute;
   z-index: 999;
   width: 186px;
@@ -102,29 +211,29 @@
   top: 525px;
   left: 560px;
 }
-#dashboard_holder #plurk-dashboard .dash-segment-friends .show_all_friends a {
+._lc_ #dashboard_holder #plurk-dashboard .dash-segment-friends .show_all_friends a {
   color: black;
   text-decoration: none;
 }
-#dashboard_holder #plurk-dashboard .dash-segment-friends #friend_holder {
+._lc_ #dashboard_holder #plurk-dashboard .dash-segment-friends #friend_holder {
   position: absolute;
   z-index: 100;
   top: 560px;
   left: 560px;
 }
-#dashboard_holder #plurk-dashboard .dash-segment-friends #friend_holder a,
-#dashboard_holder #plurk-dashboard .dash-segment-friends #friend_holder img {
+._lc_ #dashboard_holder #plurk-dashboard .dash-segment-friends #friend_holder a,
+._lc_ #dashboard_holder #plurk-dashboard .dash-segment-friends #friend_holder img {
   width: 39px;
   height: 39px;
 }
-#dashboard_holder #plurk-dashboard .dash-segment-friends #friend_holder td {
+._lc_ #dashboard_holder #plurk-dashboard .dash-segment-friends #friend_holder td {
   padding-right: 9px;
   padding-bottom: 3px;
 }
-#dashboard_holder #plurk-dashboard .dash-segment-fans {
+._lc_ #dashboard_holder #plurk-dashboard .dash-segment-fans {
   position: absolute;
 }
-#dashboard_holder #plurk-dashboard .dash-segment-fans .show_all_friends {
+._lc_ #dashboard_holder #plurk-dashboard .dash-segment-fans .show_all_friends {
   position: absolute;
   z-index: 999;
   width: 186px;
@@ -134,34 +243,58 @@
   top: 525px;
   left: 756px;
 }
-#dashboard_holder #plurk-dashboard .dash-segment-fans .show_all_friends a {
+._lc_ #dashboard_holder #plurk-dashboard .dash-segment-fans .show_all_friends a {
   color: black;
   text-decoration: none;
 }
-#dashboard_holder #plurk-dashboard .dash-segment-fans #fan_holder {
+._lc_ #dashboard_holder #plurk-dashboard .dash-segment-fans #fan_holder {
   position: absolute;
   z-index: 100;
   top: 560px;
   left: 756px;
 }
-#dashboard_holder #plurk-dashboard .dash-segment-fans #fan_holder a,
-#dashboard_holder #plurk-dashboard .dash-segment-fans #fan_holder img {
+._lc_ #dashboard_holder #plurk-dashboard .dash-segment-fans #fan_holder a,
+._lc_ #dashboard_holder #plurk-dashboard .dash-segment-fans #fan_holder img {
   width: 39px;
   height: 39px;
 }
-#dashboard_holder #plurk-dashboard .dash-segment-fans #fan_holder td {
+._lc_ #dashboard_holder #plurk-dashboard .dash-segment-fans #fan_holder td {
   padding-right: 9px;
   padding-bottom: 3px;
 }
-#dashboard_holder #plurk-dashboard .dash-segment-friends,
-#dashboard_holder #plurk-dashboard .dash-segment-fans {
+._lc_ #dashboard_holder #plurk-dashboard .dash-segment-friends,
+._lc_ #dashboard_holder #plurk-dashboard .dash-segment-fans {
   -webkit-transition: opacity 0.3s;
   opacity: 0.2 !important;
   z-index: 999;
 }
-#dashboard_holder #plurk-dashboard .dash-segment-friends:hover,
-#dashboard_holder #plurk-dashboard .dash-segment-fans:hover {
+._lc_ #dashboard_holder #plurk-dashboard .dash-segment-friends:hover,
+._lc_ #dashboard_holder #plurk-dashboard .dash-segment-fans:hover {
   opacity: 1 !important;
+}
+._lc_ .browse_button[style*="right"] {
+  top: 85px;
+  left: 40px !important;
+  right: auto !important;
+}
+._lc_ .browse_button[style*="right"] .cmp_back_to_today {
+  background: url('http://www.iconsdb.com/icons/download/white/arrow-96-24.png');
+  height: 24px;
+  width: 24px;
+  opacity: 0.8;
+  position: absolute;
+  top: 0;
+  left: -30px;
+}
+._lc_ .browse_button[style*="left"] {
+  position: absolute;
+  top: -999px !important;
+}
+._lc_ .cmp_arrow_right {
+  background: url('http://www.iconsdb.com/icons/download/white/arrow-24-24.png');
+  height: 24px;
+  width: 24px;
+  opacity: 0.8;
 }
 #dynamic_logo {
   opacity: 0;
@@ -214,132 +347,6 @@
 #plurk_form:hover .icons_holder_row {
   position: static;
   opacity: 1;
-}
-._lc_ #filter_tab {
-  z-index: 2;
-  background: rgba(0, 0, 0, 0.5);
-  position: absolute;
-  left: 0px;
-  right: -20px;
-  padding: 10px;
-  *top: 552px;
-  top: 480px;
-  border: none;
-}
-._lc_ #filter_tab a {
-  min-height: 28px;
-  min-width: 28px;
-  max-height: 28px;
-  padding: 5px 8px !important;
-  border: none !important;
-  border-radius: 5px;
-}
-._lc_ #filter_tab #count_private_plurks,
-._lc_ #filter_tab #count_my_plurks,
-._lc_ #filter_tab #count_responded_plurks,
-._lc_ #filter_tab #count_favorite_plurks,
-._lc_ #filter_tab #count_all_plurk {
-  font-size: 0px;
-}
-._lc_ #filter_tab #count_private_plurks span,
-._lc_ #filter_tab #count_my_plurks span,
-._lc_ #filter_tab #count_responded_plurks span,
-._lc_ #filter_tab #count_favorite_plurks span,
-._lc_ #filter_tab #count_all_plurk span {
-  font-size: 12px;
-  position: absolute;
-  top: 0px;
-  padding: 0px 5px;
-}
-body .browse_button[style*="right"] {
-  top: 85px;
-  left: 40px !important;
-  right: auto !important;
-}
-body .browse_button[style*="right"] .cmp_back_to_today {
-  background: url('http://www.iconsdb.com/icons/download/white/arrow-96-24.png');
-  height: 24px;
-  width: 24px;
-  opacity: 0.8;
-  position: absolute;
-  top: 0;
-  left: -30px;
-}
-body .browse_button[style*="left"] {
-  position: absolute;
-  top: -999px !important;
-}
-body .cmp_arrow_right {
-  background: url('http://www.iconsdb.com/icons/download/white/arrow-24-24.png');
-  height: 24px;
-  width: 24px;
-  opacity: 0.8;
-}
-body #timeline_holder {
-  background: none;
-  border: none;
-  background: url(http://dl.dropbox.com/u/7165134/www/plurk/themes/nichijou_night/hakase_2012_e.png) no-repeat, url(http://dl.dropbox.com/u/7165134/www/plurk/themes/nichijou_night/bg_halo2.jpg) !important;
-  background-size: auto 100%, cover !important;
-  background-position: right 40px, 50% !important;
-  height: 610px !important;
-  min-height: initial;
-  z-index: 0;
-  position: relative;
-  overflow: visible!important;
-}
-body #timeline_holder #timeline_cnt {
-  overflow: visible !important;
-  margin-top: 80px;
-}
-body #timeline_holder #timeline_cnt .cboxAnchor {
-  position: absolute;
-  left: 0px !important;
-}
-body #timeline_holder #timeline_cnt .block_cnt {
-  max-height: 300px;
-}
-body #timeline_holder #timeline_cnt .block_cnt div {
-  max-height: 300px;
-}
-body #timeline_holder #timeline_cnt .block_cnt.hh_mm {
-  border-right: 1px dashed rgba(200, 200, 200, 0.2) !important;
-}
-body #timeline_holder #timeline_cnt .block_cnt.day_start {
-  background: rgba(255, 255, 255, 0.2);
-}
-body #timeline_holder #timeline_bg .day_start {
-  opacity: 0 !important;
-}
-body #timeline_holder #timeline_bg .div_inner {
-  position: relative;
-}
-body #timeline_holder #timeline_bg .div_bottom {
-  position: absolute;
-  top: 0px!important;
-  left: 0px;
-  right: 0px;
-}
-body #timeline_holder #timeline_bg .div_bottom * {
-  color: white !important;
-  z-index: 889;
-}
-body #timeline_holder #bottom_line {
-  top: 0px !important;
-  opacity: 0.2;
-}
-body #updater {
-  top: 560px !important;
-  border: 1px solid #444444;
-  background: #555555;
-  background: rgba(0, 0, 0, 0.5);
-  -moz-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8);
-  -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8);
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8);
-  top: 85px !important;
-  left: 80px !important;
-}
-body #updater * {
-  color: white !important;
 }
 .plurk .response_count {
   color: white !important;
