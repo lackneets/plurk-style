@@ -1,5 +1,5 @@
 #dashboard_holder {
-  z-index: 0;
+  z-index: 3;
   position: absolute;
   top: 0;
   left: 0;
@@ -7,10 +7,6 @@
   max-width: 9999px;
   padding: 0px;
   margin: 0px;
-}
-#dashboard_holder .adsense {
-  position: absolute !important;
-  top: -9999px !important;
 }
 #dashboard_holder #plurk-dashboard.own {
   position: relative;
@@ -219,8 +215,8 @@
   position: static;
   opacity: 1;
 }
-#filter_tab {
-  z-index: 0;
+._lc_ #filter_tab {
+  z-index: 2;
   background: rgba(0, 0, 0, 0.5);
   position: absolute;
   left: 0px;
@@ -230,7 +226,7 @@
   top: 480px;
   border: none;
 }
-#filter_tab a {
+._lc_ #filter_tab a {
   min-height: 28px;
   min-width: 28px;
   max-height: 28px;
@@ -238,25 +234,25 @@
   border: none !important;
   border-radius: 5px;
 }
-#filter_tab #count_private_plurks,
-#filter_tab #count_my_plurks,
-#filter_tab #count_responded_plurks,
-#filter_tab #count_favorite_plurks,
-#filter_tab #count_all_plurk {
+._lc_ #filter_tab #count_private_plurks,
+._lc_ #filter_tab #count_my_plurks,
+._lc_ #filter_tab #count_responded_plurks,
+._lc_ #filter_tab #count_favorite_plurks,
+._lc_ #filter_tab #count_all_plurk {
   font-size: 0px;
 }
-#filter_tab #count_private_plurks span,
-#filter_tab #count_my_plurks span,
-#filter_tab #count_responded_plurks span,
-#filter_tab #count_favorite_plurks span,
-#filter_tab #count_all_plurk span {
+._lc_ #filter_tab #count_private_plurks span,
+._lc_ #filter_tab #count_my_plurks span,
+._lc_ #filter_tab #count_responded_plurks span,
+._lc_ #filter_tab #count_favorite_plurks span,
+._lc_ #filter_tab #count_all_plurk span {
   font-size: 12px;
   position: absolute;
   top: 0px;
   padding: 0px 5px;
 }
 body .browse_button[style*="right"] {
-  top: 35px;
+  top: 85px;
   left: 40px !important;
   right: auto !important;
 }
@@ -279,19 +275,15 @@ body .cmp_arrow_right {
   width: 24px;
   opacity: 0.8;
 }
-._lc_ {
-  background: url(http://dl.dropbox.com/u/7165134/www/plurk/themes/nichijou_night/hakase_2012_e.png) no-repeat, url(http://dl.dropbox.com/u/7165134/www/plurk/themes/nichijou_night/bg_halo2.jpg) !important;
-  background-size: auto 100%, cover !important;
-  background-position: right 40px, 50% !important;
-  height: 600px;
-  min-height: initial !important;
-}
 body #timeline_holder {
   background: none;
   border: none;
-  height: 480px !important;
+  background: url(http://dl.dropbox.com/u/7165134/www/plurk/themes/nichijou_night/hakase_2012_e.png) no-repeat, url(http://dl.dropbox.com/u/7165134/www/plurk/themes/nichijou_night/bg_halo2.jpg) !important;
+  background-size: auto 100%, cover !important;
+  background-position: right 40px, 50% !important;
+  height: 610px !important;
   min-height: initial;
-  z-index: 1;
+  z-index: 0;
   position: relative;
   overflow: visible!important;
 }
@@ -302,6 +294,12 @@ body #timeline_holder #timeline_cnt {
 body #timeline_holder #timeline_cnt .cboxAnchor {
   position: absolute;
   left: 0px !important;
+}
+body #timeline_holder #timeline_cnt .block_cnt {
+  max-height: 300px;
+}
+body #timeline_holder #timeline_cnt .block_cnt div {
+  max-height: 300px;
 }
 body #timeline_holder #timeline_cnt .block_cnt.hh_mm {
   border-right: 1px dashed rgba(200, 200, 200, 0.2) !important;
@@ -337,7 +335,7 @@ body #updater {
   -moz-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8);
   -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8);
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8);
-  top: 35px !important;
+  top: 85px !important;
   left: 80px !important;
 }
 body #updater * {

@@ -1,14 +1,9 @@
-﻿
-#dashboard_holder{
-	z-index: 0;
+﻿#dashboard_holder{
+	z-index: 3;
 	position:absolute;
 	top:0;left:0;right:0;
 	max-width:9999px;
 	padding:0px; margin:0px;
-
-	.adsense{
-		position: absolute !important; top:-9999px !important;
-	}
 
 	//自己的河道中的個人檔案
 	#plurk-dashboard.own{
@@ -223,8 +218,8 @@
 
 
 //頁籤列
-#filter_tab{
-	z-index: 0;
+._lc_ #filter_tab{
+	z-index: 2;
 	background:rgba( 0,0,0,0.5 );
 	position:absolute;
 	left:0px; right:-20px;
@@ -266,7 +261,7 @@
 // 左右瀏覽按鈕
 body{
 	.browse_button[style*="right"]{
-		top:35px;
+		top:85px;
 		left:40px !important;
 		right:auto !important;
 		.cmp_back_to_today{
@@ -293,11 +288,7 @@ body{
 // #layout_content 噗浪限制從這裡開始套
 ._lc_{
 
-	background:url(http://dl.dropbox.com/u/7165134/www/plurk/themes/nichijou_night/hakase_2012_e.png) no-repeat,url(http://dl.dropbox.com/u/7165134/www/plurk/themes/nichijou_night/bg_halo2.jpg) !important;
-	background-size: auto 100%, cover !important;
-	background-position: right 40px, 50% !important;
-	height: 600px;
-	min-height: initial !important;
+
 }
 
 //河道
@@ -306,10 +297,14 @@ body #timeline_holder{
 	background: none;
 	border:none;
 
-	height: 480px !important;
+	background:url(http://dl.dropbox.com/u/7165134/www/plurk/themes/nichijou_night/hakase_2012_e.png) no-repeat,url(http://dl.dropbox.com/u/7165134/www/plurk/themes/nichijou_night/bg_halo2.jpg) !important;
+	background-size: auto 100%, cover !important;
+	background-position: right 40px, 50% !important;
+
+	height: 610px !important;
 	min-height: initial;
 
-	z-index: 1;
+	z-index: 0;
 	position: relative;
 	overflow: visible!important;
 	
@@ -325,6 +320,10 @@ body #timeline_holder{
 		}
 
 		.block_cnt {
+
+			max-height: 300px;
+
+			div{ max-height: 300px; }
 			
 			&.hh_mm{
 				border-right:1px dashed rgba(200,200,200,0.2 ) !important;	
@@ -371,7 +370,7 @@ body {
 			color: white !important;
 		}
 
-		top: 35px !important;
+		top: 85px !important;
 		left: 80px !important;
 	}
 }
